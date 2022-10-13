@@ -1,12 +1,40 @@
 /* index page */
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: flex-start;
+    list-style: none ;  
+    }
+li{
+    margin-left: 8.5rem;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.3rem;
+    margin: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
 #page-content{
-   background-image: url(https://images.unsplash.com/photo-1546188994-07c34f6e5e1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
-   background-size: 100;  
+    background-image: url(./../Images/future.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.myName{
-    
-    
-}
+
+
+
+
+
+
 
 
 .buttons-style{
@@ -119,7 +147,10 @@
 }
 
 #profile-pic{
-    width: 500px;
+    width: 30vw;
+    height: 50vh;
+    padding-left: 3rem;
+
     
 
 }
@@ -143,15 +174,21 @@
 }
 
 
-
-
- 
  /*portfolio page */
 
  #background-pic{
     width: 200px;
  }
 
+.vending-machine{
+    display: flex;
+    
+}
+
+#description{
+    padding-top: 10px;
+    font-size: 1rem;
+}
  .myContact{
     text-align: center;
     padding: 3px;
