@@ -5,80 +5,77 @@
     <title>Portfolio page</title>
     <link rel="stylesheet" href="./../CSS/styles.css" />
   </head>
-  <body>
-    <div class="container4">
-      <div class="nav-section">
-        <div class="nav-link">
-          <a href="Home.html">Home</a>
-        </div>
-        <div class="nav-link">
-          <a href="Bio.html">Biography</a>
-        </div>
-        <div class="nav-link">
-          <a href="Experience.html">Experience</a>
-        </div>
-        <div class="nav-link">
-          <a href="Portfolio.html">Portfolio</a>
-        </div>
+  <body id="profile-pic-page">
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li id="home"><a href="/HTML/Home.html">HOME</a></li>
+          <li id="bio"><a href="/HTML/Bio.html">BIOGRAPHY</a></li>
+          <li id="expe"><a href="/HTML/Experience.html">EXPERIENCE</a></li>
+          <li id="portfolio"><a href="/HTML/Portfolio.html">PORTFOLIO</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
+
 
     <div class="content-section">
       <div class="one-column">
-        <div class="forBackground-image">
-          <img
-            id="background-pic"
-            src="./../Images/Laptop.jpg"
-            alt="Portfolio Picture"
-          />
-        </div>
 
         <div class="software-projects">
-          <h1>PROJECTS</h1>
-          <span class="vending-machine">
-            <h2>Vendo-Matic 800 |</h2>
-            <p id="description">Virtual Vending Machine Application</p>
-          </span>
+              <h1>PROJECTS</h1>
 
-          <p>
-            Virtual vending machine application with command-line interface
-            allowing users to deposit money, choose a product, and return the
-            correct change. Inventory is loaded via a text file and transactions
-            are also logged to a text file
-          </p>
+              <span class="vending-machine">
+                <h2>Vendo-Matic 800 </h2>
+                <!-- <p id="description">Virtual Vending Machine Application</p> -->
+              </span>
+                     <p>Virtual vending machine application with command-line interface</p>
+                    <p>allowing users to deposit money, choose a product, and return the correct</p>
+                    <p>change.Inventory is loaded via a text file and transactions are</p>
+                      <p id="vending-machine-link"> <a
+                      href="https://github.com/serki12/Virtual-Vending-Machine-Application.git">                 
+                      <p>Click Here </a>also logged to a text file </p></p>
+                    
+                        
 
-          <a
-            href="https://github.com/serki12/Virtual-Vending-Machine-Application.git"
-          >
-            <p>Click Here</p>
-          </a>
-
-          <h2>TEnmo |</h2>
-          <p>Money Transfer Application</p>
-          <p>
-            Peer-to-peer money transfer application allowing users to send,
-            request, and approve money transfers. Front-end is a command-line
-            application communicating with a RESTful API server in the back-end
-          </p>
-          <a href="https://github.com/serki12/TEnmo.git">
-            <p>Click Here</p>
-          </a>
-
-          <h2>Restaurant Tinder |</h2>
-          <p>Restaurant-finding Application</p>
-          <p>
-            Restaurant-finding application that allows users to discover local
-            restaurants based upon their preference. Users are able to
-            register/login, vote up/down on restaurant profiles, view profile
-            matches, and invite friends
-          </p>
-          <a href="https://github.com/serki12/Restaurant-Tinder.git">
-            <p>Click Here</p>
-          </a>
+                                  <span class="money-transfer">
+                                    <h2>TEnmo </h2>
+                                    <!-- <p id="description-project-two">Money Transfer Application</p> -->
+                                  </span>
+                                      
+                                    <p>Peer-to-peer money transfer application allowing users to send, request,and </p>
+                                    <p>approve money transfers. Front-end is a command-line application </p>
+                                    <p id="money-transfer-link"><a href="https://github.com/serki12/TEnmo.git">
+                                      <p>Click Here </a> communicating with a RESTful API server in the back-end </p>
+                                    
+                                    
+                  <span class="finding-restaurant">
+                    <h2>Restaurant Tinder </h2>
+                    <!-- <p id="description-project-three">Restaurant-finding Application</p> -->
+                  </span>
+                    <p>Restaurant-finding application that allows users to discover local</p>
+                    <p>restaurants based upon their preference. Users are able to </p> 
+                    <p>register/login, vote up/down on restaurant profiles, view profile
+                    <p id="finding-restaurant-link"><a href="https://github.com/serki12/Restaurant-Tinder.git">
+                    <p>Click Here </a>matches, and invite friends</p>                   
         </div>
 
         <div class="pro-content"></div>
       </div>
     </div>
+
+    <div class="footer">  
+
+                
+      <div class="footer-heading">
+          
+          <a href="https://www.linkedin.com">Linkedin</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://myaccount.google.com">Email</a>
+          
+      </div>
+<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script></p>
+
+</div> 
   </body>
 </html>

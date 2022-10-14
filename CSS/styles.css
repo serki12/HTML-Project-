@@ -5,12 +5,29 @@
     flex-direction: row;
     text-decoration: none;
     align-items: flex-start;
-    list-style: none ;  
+    list-style: none ;   
     }
+
+ @media screen and (max-width: 500px) {
+    body{
+        flex-direction: column;
+    }
+    .nav-list{
+        flex-direction: column;
+        height: 20vh;
+    }
+    .page-content{
+        width: 100%;
+    }
+    
+ }   
+
+
 li{
     margin-left: 8.5rem;
     padding-left: 2rem;
     cursor: pointer;
+    text-shadow: 2px 2px 5px purple ;
 }
 .nav-container{
     display: flex;
@@ -24,7 +41,7 @@ a{
 }
 
 #page-content{
-    background-image: url(./../Images/future.jpg);
+    background-image: url(./../Images/tech-pic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -51,7 +68,7 @@ a{
     hsl(0 0% 100%/ 0.5), 0 0 0.45em currentColor ;
      box-shadow: insert 0 0 0.5em 0 var(--clr-black), 0 0 0.5em 0 var(--clr-black);
 
-    /* border: currentColor 0.125em solid;*/
+   
 }
 
 .buttons-style::before{
@@ -83,59 +100,44 @@ a{
     width: 100;
     height: 100;
     transition: opacity 100ms linear;
-
-
 }
 
 .buttons-style:hover,
 .buttons-style:focus{
     color: var(--clr-black);
-    text-shadow: none;
 }
-
-
-
-
-
-
 
 
 
 
 /* Home Page */
-.four-column{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.home-content{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 .learn-and-build{
     padding: 30px;
-}
-
-.learn-and-build h1{
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    text-shadow: 2px 2px 5px rgb(194, 34, 124);
+    margin-top: 200px;   
+    color: #212329;
+    display: flex;
+    flex-direction:column;
+     
+}
+ .profile-image {
+    display: flex;
+    margin-left: 100px;
+    flex-direction: row;
+}
 
-}
- .home-content {
-    
- }
-#home-page-content{
-  width: 500px;  
-  margin-left: 800px;
-}
 
 #main-picture{
-    width: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    margin: 20px 20px 100px;
+    box-shadow: 0px 0px 50px rgb(246, 108, 195);
+    
 }
-
-
-
-
 
 
 
@@ -147,21 +149,26 @@ a{
 }
 
 #profile-pic{
-    width: 30vw;
-    height: 50vh;
+    width: 40vw;
+    height: 45vh;
     padding-left: 3rem;
-
-    
-
+    margin-top: 100px;
 }
 
  .bio-content{
     padding: 30px;
+    margin-top: 50px;
+    
+  
  }
  .bio-content h1{
     color: blueviolet;
+    text-shadow: 2px 2px 8px rgb(117, 67, 117);
  }
 
+ .bio-content p{
+    text-shadow: 2px 2px 10px rgb(214, 109, 210);
+ }
  
 
 
@@ -169,16 +176,83 @@ a{
 
  /*Experience page */
 
-#experience-content{
-    width: 400px;
+.work-experience{
+    border-style: groove;
+    border-width: 2rem;
+    border-color: rgb(244, 215, 239);
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 6px 6px 25px plum;
+    width: 100%;
+
+    
+}
+
+.education-page{
+    border-style: groove;
+    border-width: 2rem;
+    border-color: rgb(244, 215, 239);
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 6px 6px 25px plum;
+    width: 100%;
+    
+}
+
+.work-experience h1{
+    text-align: center;
+    text-shadow: 1px 1px 5px purple;
+}
+
+.education-page h1{
+    text-align: center;
+    text-shadow: 1px 1px 5px purple;
+}
+
+.main-container .work-experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-star; 
+    align-items: flex-start;
+    
+}
+.content-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 
- /*portfolio page */
 
- #background-pic{
-    width: 200px;
+
+
+ /*portfolio page */
+ 
+ 
+.content-section h1{
+    align-items: center;
+    text-shadow: blueviolet;
  }
+
+ #profile-pic-page{
+    background-image: url(./../Images/dark-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 200px;
+ }
+
+ #profile-pic-page .software-projects {
+    color: antiquewhite;
+    margin-right: 750px;
+    list-style: none ;  
+ }
+
+ .one-column{
+    font-size: medium;
+ }
+
 
 .vending-machine{
     display: flex;
@@ -195,12 +269,89 @@ a{
     background-color: burlywood;
     color: black;
  }
- #footer-content{
-    text-align: center;
-    padding: 3px;
+
+.money-transfer{
+    display: flex;
+}
+
+#description-project-two{
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+.finding-restaurant{
+    display: flex;
+}
+
+#description-project-three{
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* footer */
+
+
+*{
+    padding: 0;
+    margin-bottom: 0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ .footer{
+    width: 80;
+    
+    background-color: #050505; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   position:fixed;
+   bottom: 0;
+   width: 100%;  
+   left: 0;
+    
+ }
+ .footer-heading{
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+    flex-wrap: wrap;
+
  }
 
+.footer-heading a{
+  
+    text-decoration: none;
+    margin-bottom: 01.5rem;
+    margin-top: 30px;
+    margin: 20px;
+
+}
+
+.footer-heading a:hover{
+    color: white;
+    transition: 0.3s ease-out;
+}
 
 
+
+
+.footer p{
+    text-align: end;
+    margin-bottom: 20px;
+    font-size: small;
+    margin-right: 60px;
+  
+
+}
 
 
